@@ -101,7 +101,7 @@ class Signup extends CI_Controller
         $config['mailtype']     = 'text';
         $config['validation']   = true;
         $this->email->initialize($config);
-        $this->email->from('nmohanan@suyati.com', 'Naveen');
+        $this->email->from('naveen.bos@gmail.com', 'Naveen');
         $this->email->to($email);
         $this->email->subject("Activation Link");
         $message = $this->load->view('email/activation', $data, true);
